@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigetion"
+    app:startDestination="@+id/navigation_select">
+
+
+
+    <fragment
+        android:id="@+id/navigation_select"
+        android:name="com.example.conference.ui.selectfragment.SelectFragment"
+        android:label="@string/select_name"
+        tools:layout="@layout/fragment_select" />
+
+    <fragment
+        android:id="@+id/navigation_handle"
+        android:name="com.example.conference.ui.handlefragment.HandleFragment"
+        android:label="@string/handle_name"
+        tools:layout="@layout/fragment_handle" />
+
+    <fragment
+        android:id="@+id/navigation_pdfs"
+        android:name="com.example.conference.ui.pdfsfragment.PdfFragment"
+        android:label="@string/pdfs_name"
+        tools:layout="@layout/fragment_pdfs" />
+
+</navigation>

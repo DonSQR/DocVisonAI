@@ -1,0 +1,25 @@
+// Top-level build file
+buildscript {
+    ext {
+        // SDK 版本
+        compileSdkVersion = 33
+        minSdkVersion = 21
+        targetSdkVersion = 33
+        // 工具版本
+        agpVersion = '7.4.2'
+    }
+    repositories {
+        google()
+        mavenCentral()
+    }
+    dependencies {
+        classpath "com.android.tools.build:gradle:$agpVersion"
+    }
+}
+
+// 注意:项目仓库统一在 settings.gradle 的 dependencyResolutionManagement 中声明
+// 这里不再用 allprojects 覆盖仓库,避免与 FAIL_ON_PROJECT_REPOS 冲突
+
+task clean(type: Delete) {
+    delete rootProject.buildDir
+}

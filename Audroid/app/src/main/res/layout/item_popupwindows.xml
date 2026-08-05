@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:id="@+id/popup"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:background="@null"
+        >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="@null"
+            >
+            <Button
+                android:id="@+id/select_from_camera"
+                android:layout_width="match_parent"
+                android:layout_height="55dp"
+                android:textColor="#000000"
+                android:text="拍照获取"
+                android:textSize="18sp"
+                android:background="@drawable/btn_camera_sharp_selector"
+
+                />
+            <ImageView
+                android:layout_width="fill_parent"
+                android:layout_height="1px"
+                android:background="@mipmap/list_item_divide_operate"
+                />
+            <Button
+                android:id="@+id/select_from_photos"
+                android:layout_width="match_parent"
+                android:layout_height="55dp"
+                android:background="@drawable/btn_photo_sharp_selector"
+                android:textColor="#000000"
+                android:textSize="18sp"
+                android:text="从相册获取"
+                />
+
+
+        </LinearLayout>
+        <ImageView
+            android:layout_width="fill_parent"
+            android:layout_height="10dp"
+            android:background="@null"
+            />
+        <Button
+            android:id="@+id/cancel_select"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:layout_marginBottom="10dp"
+            android:textColor="#000000"
+            android:textSize="18sp"
+            android:text="取消"
+            android:background="@drawable/btn_photo_cancel_sharp_selector"
+            />
+
+
+
+
+    </LinearLayout>
+
+</RelativeLayout>

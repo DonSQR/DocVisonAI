@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/fragment_select"
+    tools:context=".ui.selectfragment.SelectFragment">
+
+    <GridView
+        android:id="@+id/gvMain"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:numColumns="2"
+
+
+        />
+
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/select_imgs"
+        android:layout_width="300dp"
+        android:layout_height="300dp"
+        android:layout_alignParentRight="false"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="false"
+        android:layout_gravity="bottom|end"
+        android:layout_marginLeft="80dp"
+        android:layout_marginBottom="150dp"
+        app:backgroundTint="#74F6BE"
+        app:srcCompat="@drawable/add" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/confirm"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="false"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="false"
+        android:layout_gravity="bottom|end"
+        android:layout_marginLeft="250dp"
+        android:layout_marginBottom="150dp"
+        app:backgroundTint="#74F6BE"
+        app:srcCompat="@drawable/handle_write"
+
+
+        />
+
+
+
+
+</RelativeLayout>
